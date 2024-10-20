@@ -13,6 +13,6 @@ try:
         print("Database 'alx_book_store' created successfully!")
         mydb.commit()
 
-except mysql.connector.error as e:
+except mysql.connector.Error as e:
     print(f"Error occured: {e}")
 
